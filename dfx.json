@@ -1,0 +1,27 @@
+{
+    "canisters": {
+        "NFID": {
+            "dependencies": [],
+            "frontend": {
+              "entrypoint": "NFID/src/index.html"
+            },
+            "source": [
+              "NFID/assets",
+              "dist/NFID/"
+            ],
+            "type": "assets"
+          },
+        "backend":{
+            "type": "motoko",
+            "main": "Backend/main.mo"
+        }
+    },
+    "defaults": {
+        "build": {
+          "args": "",
+          "packtool": "mops sources"
+        }
+      },
+      "output_env_file": ".env",
+      "version": 1
+}
